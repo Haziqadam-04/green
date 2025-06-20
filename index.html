@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GREENIT - Ubah Sampah Jadi Peluang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f4fff5;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #2e7d32;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .cta {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 50px 30px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #eaffea;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text span {
+      color: #43b949;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      margin-right: 10px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .buttons button:first-child {
+      background: #43b949;
+      color: white;
+    }
+
+    .buttons button.secondary {
+      background: white;
+      border: 1px solid #43b949;
+      color: #43b949;
+    }
+
+    .hero img {
+      width: 400px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .produk-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .testimoni-section {
+      background: #f3fff4;
+      padding: 60px 20px;
+    }
+
+    .testimoni-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimoni-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      flex: 0 1 calc(50% - 30px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimoni-card img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .testimoni-card p {
+      font-style: italic;
+      margin: 20px 0 10px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .testimoni-card {
+        flex: 0 1 100%;
+      }
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- <div class="logo">🌱 GREENIT</div> -->
+    <img src="image/logo greenit.jpeg" alt="Kompos" style="height: 100;" width="100">
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#products">Produk</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="cta">Login</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Ubah Sampah <span>Jadi Peluang</span></h1>
+      <p>Bergabunglah dengan gerakan zero waste dan dapatkan manfaat dari pengelolaan sampah organik berkelanjutan.</p>
+      <div class="buttons">
+        <button>Coba Sekarang</button>
+        <button class="secondary">Tonton Video</button>
+      </div>
+    </div>
+    <img src="image/gambar kompos 1.jpeg" alt="Kompos">
+  </section>
+
+  <section id="products">
+    <h2>Produk Unggulan</h2>
+    <div class="produk-list">
+      <div class="card">
+        <img src="image/gambar kompos 2.jpeg" alt="Kompos Premium">
+        <h3>Kompos Kualitas Terbaik</h3>
+        <p>Rp 7.000/kg</p>
+        <button class="cta">Pesan Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 60px 20px; background: #f6fef8;">
+    <h2 style="text-align: center; font-size: 28px; margin-bottom: 40px; color: #1b1b1b;">Cara Mendapat Poin</h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+      
+      <div style="background: #fff; padding: 30px 20px; width: 220px; border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); text-align: center;">
+        <div style="background: #e6f6ec; display: inline-flex; padding: 12px; border-radius: 50%; margin-bottom: 16px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/2909/2909767.png" alt="daun" style="width: 24px; height: 24px;">
+        </div>
+        <p style="margin-bottom: 10px;">Serahkan 1kg sampah organik</p>
+        <div style="color: #1b8c35; background: #d4f3df; display: inline-block; padding: 4px 10px; border-radius: 8px; font-weight: bold;">+10 poin</div>
+      </div>
+  
+      <div style="background: #fff; padding: 30px 20px; width: 220px; border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); text-align: center;">
+        <div style="background: #e6f6ec; display: inline-flex; padding: 12px; border-radius: 50%; margin-bottom: 16px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="bintang" style="width: 24px; height: 24px;">
+        </div>
+        <p style="margin-bottom: 10px;">Komposter pertama kali</p>
+        <div style="color: #1b8c35; background: #d4f3df; display: inline-block; padding: 4px 10px; border-radius: 8px; font-weight: bold;">+50 poin</div>
+      </div>
+  
+      <div style="background: #fff; padding: 30px 20px; width: 220px; border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); text-align: center;">
+        <div style="background: #e6f6ec; display: inline-flex; padding: 12px; border-radius: 50%; margin-bottom: 16px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="gift" style="width: 24px; height: 24px;">
+        </div>
+        <p style="margin-bottom: 10px;">Referral teman berhasil</p>
+        <div style="color: #1b8c35; background: #d4f3df; display: inline-block; padding: 4px 10px; border-radius: 8px; font-weight: bold;">+25 poin</div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section id="rewards">
+    <h2>Katalog Reward</h2>
+    <div class="produk-list">
+      <div class="card" style="border: 2px solid #ffeaa7;">
+        <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Voucher" style="width: 64px; height: 64px; margin-bottom: 12px;">
+        <h3>Voucher Belanja</h3>
+        <p>Tukarkan poin dengan voucher belanja di merchant partner</p>
+        <p><strong>500 poin</strong></p>
+        <p style="color:green; font-weight:bold;">Rp 20.000</p>
+        <button class="cta">Tukar Sekarang</button>
+      </div>
+      
+      <div class="card" style="border: 2px solid #b2fab4;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png" alt="Produk Organik" style="width: 64px; height: 64px; margin-bottom: 12px;">
+        <h3>Produk Organik</h3>
+        <p>Dapatkan produk organik berkualitas dengan poin Anda</p>
+        <p><strong>300 poin</strong></p>
+        <p style="color:green; font-weight:bold;">Kompos 1kg</p>
+        <button class="cta">Tukar Sekarang</button>
+      </div>
+      
+      <div class="card" style="border: 2px solid #a3d5ff;">
+        <img src="https://cdn-icons-png.flaticon.com/512/814/814513.png" alt="Merchandise" style="width: 64px; height: 64px; margin-bottom: 12px;">
+        <h3>Merchandise Eksklusif</h3>
+        <p>Koleksi merchandise ramah lingkungan terbatas</p>
+        <p><strong>750 poin</strong></p>
+        <p style="color:green; font-weight:bold;">Tas Eco-Friendly</p>
+        <button class="cta">Tukar Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimoni-section" id="testimoni">
+    <h2>Testimoni & Dampak</h2>
+    <p style="text-align:center; max-width:600px; margin:0 auto 40px; font-size:16px; color:#555;">
+      Dengarkan cerita inspiratif dari komunitas GREENIT dan lihat dampak nyata yang kami ciptakan.
+    </p>
+    <div class="testimoni-wrapper">
+      <!-- GANTI INI DENGAN SEMUA TESTIMONI -->
+      <!-- Copy testimoni-card seperti sebelumnya -->
+      <!-- Contoh 1 -->
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Maya">
+          <div>
+            <div style="font-weight: bold;">Dr. Maya Putri</div>
+            <div style="font-size: 14px; color: #555;">Dokter & Urban Farmer – Surabaya</div>
+          </div>
+        </div>
+        <p>"Kompos GREENIT benar-benar premium! Tanaman sayuran di kebun urban saya tumbuh subur dan hasil panen meningkat 40% sejak menggunakan kompos ini."</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Panen meningkat 40%</span>
+      </div>
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmad">
+          <div>
+            <div style="font-weight: bold;">Ahmad Rizki</div>
+            <div style="font-size: 14px; color: #555;">Ketua RT – Yogyakarta</div>
+          </div>
+        </div>
+        <p>"Program komposter komunitas dari GREENIT berhasil mengubah RT kami. Sekarang warga lebih sadar lingkungan dan sampah organik berkurang 60%."</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Sampah RT berkurang 60%</span>
+      </div>
+      
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Joko">
+          <div>
+            <div style="font-weight: bold;">Joko Santoso</div>
+            <div style="font-size: 14px; color: #555;">Petani – Karawang</div>
+          </div>
+        </div>
+        <p>"Dulu saya buang sampah begitu saja. Sekarang, saya bisa olah dan dapat kompos untuk ladang jagung saya."</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Sampah rumah tangga 0%</span>
+      </div>
+      
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Nina">
+          <div>
+            <div style="font-weight: bold;">Nina Maharani</div>
+            <div style="font-size: 14px; color: #555;">Mahasiswa – Bandung</div>
+          </div>
+        </div>
+        <p>"GREENIT bikin saya makin sadar hidup zero waste. Komposnya saya pakai untuk tanam tanaman di kos."</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Zero Waste Lifestyle</span>
+      </div>
+      
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/men/25.jpg" alt="Bayu">
+          <div>
+            <div style="font-weight: bold;">Bayu Firmansyah</div>
+            <div style="font-size: 14px; color: #555;">Karyawan Swasta – Jakarta</div>
+          </div>
+        </div>
+        <p>"Dulu saya bingung buang sisa makanan. Sekarang saya tukar poin dan bisa dapat voucher. Keren banget!"</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Tukar poin tiap minggu</span>
+      </div>
+      
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Lina">
+          <div>
+            <div style="font-weight: bold;">Lina Kusuma</div>
+            <div style="font-size: 14px; color: #555;">Wirausaha – Depok</div>
+          </div>
+        </div>
+        <p>"Saya pakai kompos GREENIT buat tanaman herbal di rumah. Kualitasnya bagus, dan hemat banget!"</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Hemat 30% belanja</span>
+      </div>
+      
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Dani">
+          <div>
+            <div style="font-weight: bold;">Dani Permana</div>
+            <div style="font-size: 14px; color: #555;">Pemuda Karang Taruna – Bekasi</div>
+          </div>
+        </div>
+        <p>"Kami bareng anak-anak Karang Taruna ikut gerakan GREENIT. Jadi makin peduli lingkungan dan dapat manfaat juga."</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Kampung bebas sampah</span>
+      </div>
+      
+      <div class="testimoni-card">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="Sari">
+          <div>
+            <div style="font-weight: bold;">Sari Lestari</div>
+            <div style="font-size: 14px; color: #555;">Ibu Rumah Tangga – Cimahi</div>
+          </div>
+        </div>
+        <p>"Anak-anak saya jadi lebih peduli kebersihan karena GREENIT. Setiap minggu kami olah sisa dapur bareng!"</p>
+        <span style="background: #d8f5e0; color: #1b8c35; padding: 6px 12px; font-size: 14px; border-radius: 8px; width: fit-content;">Keluarga zero waste</span>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    🌱 GREENIT - +62 811-2345-6789<br>
+    Mengubah sampah organik menjadi peluang berkelanjutan.
+  </footer>
+
+</body>
+</html>
